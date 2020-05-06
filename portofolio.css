@@ -22,8 +22,6 @@ nav{
 	background: transparent;
 	position: fixed;
 	top: 0;
-	animation-timing-function: slideIn;
-	animation: mymoves .5s forwards;
 	z-index: 999;
 }
 
@@ -31,10 +29,6 @@ nav.navbar.scrolled{
 	background: #222;
 	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
 	transition: .5s;
-}
-
-@keyframes mymoves{
-	from {left: 100rem;}
 }
 
 label.logo{
