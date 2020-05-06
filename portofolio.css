@@ -4,9 +4,6 @@
 	box-sizing: border-box;
 	text-decoration: none;
 	list-style: none;
-}
-
-*body{
 	font-family: 'Lato', sans-serif;
 }
 
@@ -28,6 +25,12 @@ nav{
 	animation-timing-function: slideIn;
 	animation: mymoves .5s forwards;
 	z-index: 999;
+}
+
+nav.navbar.scrolled{
+	background: #222;
+	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+	transition: .5s;
 }
 
 @keyframes mymoves{
@@ -54,7 +57,7 @@ label.logo span{
 	display: none;
 	position: fixed;
 	cursor: pointer;
-	top: 1.5rem;
+	top: 1.22rem;
 	right: 2rem;
 	font-size: 30px;
 	color: crimson;
@@ -73,13 +76,17 @@ nav ul li{
 	animation: slideIn .5s forwards;
 }
 
+nav ul li.active a{
+	color: crimson;
+}
+
 nav ul li a{
 	color: #FDECEC;
 	font-size: 15px;
 	text-transform: uppercase;
 }
 
-nav ul li a:hover, a.active{
+nav ul li a:hover{
 	color: crimson;
 	transition: .2s;
 }
@@ -94,6 +101,7 @@ nav ul li a:hover, a.active{
 	max-width: 800px;
 	text-align: center;
 	box-sizing: border-box;
+	font-weight: bold;
 	animation-timing-function: slideIn;
 	animation: mymove .9s forwards;
 }
@@ -102,8 +110,48 @@ nav ul li a:hover, a.active{
 	from {left: -100rem;}
 }
 
-.page-content h1{
+.page-content label.header-logo{
+	font-size: 47px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #EEF8F9;
+	text-shadow:
+	3px 3px 0 rgba(0, 0, 0, .4),
+	-1px -1px 0 rgba(0, 0, 0, .2),  
+	1px -1px 0 rgba(0, 0, 0, .2),
+	-1px 1px 0 rgba(0, 0, 0, .4),
+	1px 1px 0 rgba(0, 0, 0, .2);
+}
+
+.page-content label.header-logo span{
 	color: crimson;
+	font-size: 50px;
+}
+
+.page-content h3{
+	color: rgba(255,255,255,0.9);
+	font-size: 35px;
+	text-shadow: 3px 2px 4px rgba(220, 221, 225, .3);
+}
+
+.page-content label.slide-down a{
+	color: rgba(255,255,255,0.9);
+	font-size: 55px !important;
+	transition: .7s;
+}
+
+.page-content label.slide-down a:hover{
+	font-size: 60px !important;
+	transition: .7s;
+}
+
+.page-content label.slide-down i{
+	margin-top: 3rem;
+}
+
+.about{
+	background: #EDDFDF;
+	padding: 75px 0 75px;
 }
 
 @media (max-width: 942px){
@@ -122,7 +170,7 @@ nav ul li a:hover, a.active{
 	}
 }
 
-@media (max-width: 728px){
+@media (max-width: 750px){
 	.menu-toggle {
 		display: block;
 	}
@@ -141,11 +189,45 @@ nav ul li a:hover, a.active{
 		color: crimson;
 		font-weight: bold;
 	}
-	nav ul li a:hover, a.active{
+	nav ul li.active a{
 		color: #44bd32;
+	}
+	nav ul li a:hover{
+		color: #44bd32;
+	}
+	nav.menu-open{
+		transition: 1s;
 	}
 	nav.menu-open ul, nav.menu-open ul li{
 		display: block;
 	}
+	.page-content label.header-logo{
+		font-size: 40px;
 	}
+	.page-content label.header-logo span{
+		font-size: 43px;
+	}
+	.page-content h3 {
+		font-size: 27px;
+	}
+}
+
+@media (max-width: 424px){
+	label.logo{
+		font-size: 25px;
+		padding: 0 27px;
+	}
+	.menu-toggle {
+		right: 1.4rem;
+	}
+	.page-content label.header-logo{
+		font-size: 35px;
+	}
+	.page-content label.header-logo span{
+		font-size: 38px;
+	}
+	.page-content h3 {
+		font-size: 21px;
+	}
+}
 
