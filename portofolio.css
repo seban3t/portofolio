@@ -27,7 +27,7 @@ nav{
 
 nav.navbar.scrolled{
 	background: #222;
-	box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.19);
+	box-shadow: 0px 1.5px 0px 0 rgba(0, 0, 0, 0.13), 0px 3px 0px 0px rgba(0, 0, 0, 0.1), 0px 4.5px 0px 0px rgba(0,0,0, 0.07);
 	transition: .5s;
 }
 
@@ -78,11 +78,12 @@ nav ul li a{
 	color: #FDECEC;
 	font-size: 15px;
 	text-transform: uppercase;
+	transition: .4s;
 }
 
 nav ul li a:hover{
 	color: crimson;
-	transition: .2s;
+	transition: .5s;
 }
 
 .page-content 
@@ -144,8 +145,61 @@ nav ul li a:hover{
 }
 
 .about{
-	background: #EDDFDF;
-	padding: 75px 0 75px;
+	background: #fff;
+	padding: 75px 15px 75px;
+}
+
+.about h1{
+	font-size: 35px;
+	font-weight: bold;
+	color: rgba(99, 110, 114, .8);
+}
+
+.about h1 label.header-logo{
+	font-size: 37px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #EEF8F9;
+	-webkit-text-stroke: .3px #000 ;
+}
+
+.about h1 label.header-logo span{
+	color: crimson;
+	font-size: 40px;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.about-content{
+	width: 33%;
+	height: 375px;
+	display: inline-block;
+	padding: 25px 10px 25px;
+	text-align: center;
+}
+
+.about-content-img{
+	max-width: 100%;
+	height: 250px;
+}
+
+.about-content p{
+	text-align: left;
+	color: rgba(99, 110, 114, .8);
+	webkit-text-stroke: 1px rgba(99, 110, 114, .8);
+	margin-top: 5px;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+@media(max-width: 1220px){
+	.about-content p{
+		font-size: 13px;
+	}
 }
 
 @media (max-width: 942px){
@@ -161,6 +215,13 @@ nav ul li a:hover{
 	}
 	nav ul li a{
 		font-size: 14px;
+	}
+	.about-content{
+		width: 100%;
+	}
+	.about-content p{
+		text-align: center;
+		font-size: 15px;
 	}
 }
 
@@ -211,17 +272,33 @@ nav ul li a:hover{
 		font-size: 25px;
 		padding: 0 27px;
 	}
+
 	.menu-toggle {
 		right: 1.4rem;
 	}
+
 	.page-content label.header-logo{
 		font-size: 35px;
 	}
+
 	.page-content label.header-logo span{
 		font-size: 38px;
 	}
+
 	.page-content h3 {
 		font-size: 21px;
+	}
+
+	.about h1{
+		font-size: 27px;
+	}
+
+	.about h1 label.header-logo{
+		font-size: 30px;
+	}
+
+	.about h1 label.header-logo span{
+		font-size: 33px;
 	}
 }
 
