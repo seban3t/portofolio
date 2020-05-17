@@ -1,3 +1,28 @@
+/*
+ * ScrollBar Effects
+ */
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #2ecc71; 
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2ecc71; 
+}
+
+
 *{
 	margin: 0;
 	padding: 0;
@@ -203,12 +228,12 @@ nav ul li a:hover{
 
 .about-content h2{
 	font-size: 20px;
-    text-align: center;
-    letter-spacing: normal;
-    text-transform: uppercase;
-    line-height: 30px;
-    color: #fff;
-    transition: all .6s;
+	text-align: center;
+	letter-spacing: normal;
+	text-transform: uppercase;
+	line-height: 30px;
+	color: #fff;
+	transition: all .6s;
 }
 
 .about-content:nth-child(even){
@@ -375,6 +400,250 @@ hr.service-divider{
 	transition: .5s all;
 }
 
+.projects{
+	background: #fff;
+	padding: 75px 0 75px;
+}
+
+.projects h1{
+	font-size: 35px;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(1, 1, 1, .8);
+	margin-bottom: 15px;
+}
+
+.projects h4{
+	font-size: 28px;
+	text-align: center;
+}
+
+.project-content{
+	display: grid;
+	grid-template-columns: auto auto;	
+	padding: 40px 10px 0;
+}
+
+.project-content-items{
+	margin: 10px;
+	padding-top: 50%;
+	background: grey;
+	position: relative;
+}
+
+.project1{
+	background: url(img/project1.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.project2{
+	background: url(img/project2.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.project3{
+	background: url(img/project3.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.project4{
+	background: url(img/project4.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.project1:hover{
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(img/project1.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.project2:hover{
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(img/project2.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.project3:hover{
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(img/project3.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.project4:hover{
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(img/project4.png) no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.text{
+	text-align: justify;
+	width: 100%;
+	position: absolute;
+	padding: 0 10% 0;
+	top: 20%;
+	left: 0;
+	transform: translateY(-20%);
+	transition: .6s all;
+}
+
+.text h1{
+	color: transparent;
+	font-weight: bold;
+	text-transform: uppercase;
+	transition: .6s all;
+}
+
+.text-detail{
+	text-align: justify;
+	width: 100%;
+	position: absolute;
+	padding: 0 10% 0;
+	top: 80%;
+	left: 0;
+	transform: translateY(-80%);
+	transition: .6s all;
+}
+
+.text-detail p{
+	color: transparent;
+	text-align: center;
+	font-size: 25px;
+	transition: .6s all;
+	margin: 20px;
+}
+
+.text-detail .web-detail{
+	text-align: center;
+}
+
+.text-detail .web-detail a{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 14px;
+	color: transparent;
+	padding: 8px 8px;
+	border: 2.5px solid transparent;
+	transition: .6s all;
+}
+
+.project-content-items:hover .text h1{
+	color: #fff;
+}
+
+.project-content-items:hover .text{
+	top: 40%;
+	transform: translateY(-40%);
+}
+
+.project-content-items:hover .text-detail {
+	top: 60%;
+	transform: translateY(-60%);
+}
+
+.project-content-items:hover .text-detail p{
+	color: #2ecc71;
+}
+
+.project-content-items:hover .text-detail .web-detail a{
+	color: #fff;
+	border: 2.5px solid #e74c3c;
+}
+
+.project-content-items:hover .text-detail .web-detail a:hover{
+	color: #f39c12;
+}
+
+.contacts{
+	background: #fff;
+}
+
+.contact-session{
+	width: 100%;
+	position: relative;
+	text-align: center;
+	background: linear-gradient(to bottom, rgba(0,0,0,.8), rgba(0,0,0,.5)), url(img/contact-bg.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	padding: 225px 75px 225px;
+}
+
+.contact-session h1{
+	font-size: 40px;
+	color: #f5f6fa;
+	text-shadow: 0 0 4px rgba(220, 221, 225, .3), 0 0 7px rgba(220, 221, 225, .2), 0 0 9px rgba(220, 221, 225, .15);
+	margin-bottom: 40px;
+}
+
+.contact-session h1 span{
+	color: #44bd32;
+}
+
+.contact-button a{
+	padding: 15px 35px;
+	background: #f1c40f;
+	font-family: 'Arimo', sans-serif;
+	font-size: 18px;
+	color: #2f3640;
+	font-weight: 700;
+	border-radius: 4px;
+	box-shadow: 0 0 4px rgba(220, 221, 225, .3), 0 0 7px rgba(220, 221, 225, .2), 0 0 9px rgba(220, 221, 225, .15);
+	transition: .02s all;
+}
+
+.contact-button a:hover{
+	border-bottom: none;
+	border-bottom: 3px solid #e67e22;
+}
+
+.contact-info{
+	padding: 35px 15px 35px;
+	text-align: center;
+	font-family: 'Arimo', sans-serif;
+}
+
+.contact-info span a{
+	color: #7f8c8d;
+	font-weight: bold;
+}
+
+.media-social{
+	text-align: center;
+	margin-bottom: 45px;
+}
+
+.media-social a{
+	color: #7f8c8d;
+	font-size: 30px;
+	font-weight: bold;
+	margin: 20px;
+	transition: .6s all;
+}
+
+.media-social a:hover{
+	color: #4834d4;
+}
+
+.foot{
+	text-shadow: 0 0 2px rgba(220, 221, 225, .08), 0 0 8px rgba(220, 221, 225, .12), 0 0 11px rgba(220, 221, 225, .07);
+}
+
+.footer{
+	text-align: center;
+	background: #1e272e;
+	padding: 45px 15px 15px;
+}
+
+.footer p{
+	color: #f7f1e3;
+}
+
+.footer p a{
+	color: #ccae62;
+}
+
 @media (min-width: 1724px){
 	.service-content{
 		padding: 75px 150px 75px;
@@ -443,7 +712,7 @@ hr.service-divider{
 }
 
 @media (max-width: 1020px){
-.service-content-card{
+	.service-content-card{
 		width: 312px;
 	}
 }
@@ -475,7 +744,7 @@ hr.service-divider{
 		font-size: 14px;
 	}
 	.about{
-		padding: 70px 0 70px;
+		padding: 75px 0 75px;
 	}
 	.about-child{
 		border-top: 20px solid rgba(52, 73, 94,1.0);	
@@ -497,6 +766,9 @@ hr.service-divider{
 	}
 	.service-content-card{
 		width: 100%;
+	}
+	.project-content{
+		grid-template-columns: auto;
 	}
 }
 
@@ -540,6 +812,27 @@ hr.service-divider{
 	}
 	.page-content h3 {
 		font-size: 27px;
+	}
+}
+
+@media (max-width: 680px){
+	.contact-session h1{
+		font-size: 35px;
+	}
+}
+
+@media (max-width: 600px){
+	.text h1{
+		font-size: 18px;
+	}
+	.text-detail p{
+		font-size: 14px;
+	}
+	.text-detail .web-detail a{
+		font-size: 11px;
+	}
+	.contact-session h1{
+		font-size: 30px;
 	}
 }
 
