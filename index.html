@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Portofolio</title>
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Arimo&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="Design-Portfolio.css">
 </head>
 <body>
@@ -20,8 +21,8 @@
 					<li><a class="scroll" href="#home">Home</a></li>
 					<li><a class="scroll" href="#about">About</a></li>
 					<li><a class="scroll" href="#service">Service</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Contacts</a></li>
+					<li><a class="scroll" href="#projects">Projects</a></li>
+					<li><a class="scroll" href="#contacts">Contacts</a></li>
 				</ul>
 			</nav>
 		</header>
@@ -114,7 +115,73 @@
 							</div>
 						</div>
 					</div>
+
+					<div class="projects" id="projects">
+						<h1>Projects</h1>
+						<h4>Our Latest Projects</h4>
+						<div class="project-content">
+							<div class="project-content-items project1">
+								<div class="text">
+									<h1>BaseCamp Studio</h1>
+								</div>
+								<div class="text-detail">
+									<p>Training Purpose-Website</p>
+									<div class="web-detail"><a href="#">View Website</a></div>
+								</div>
+							</div>
+							<div class="project-content-items project2">
+								<div class="text">
+									<h1>PPSB Bungus</h1>
+								</div>
+								<div class="text-detail">
+									<p>Training Purpose-Website</p>
+									<div class="web-detail"><a href="#">View Website</a></div>
+								</div>
+							</div>
+							<div class="project-content-items project3">
+								<div class="text">
+									<h1>Perpustakaan</h1>
+								</div>
+								<div class="text-detail">
+									<p>Training Purpose-Website</p>
+									<div class="web-detail"><a href="#">View Website</a></div>
+								</div>
+							</div>
+							<div class="project-content-items project4">
+								<div class="text">
+									<h1>Balaistore</h1>
+								</div>
+								<div class="text-detail">
+									<p>Training Purpose-Website</p>
+									<div class="web-detail"><a href="#">View Website</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="contacts">
+						<div class="contact-session" id="contacts">
+							<h1>Need to Talk <span>More</span> With Us ?</h1>
+							<div class="contact-button">
+								<a href="#">Contac Us</a>
+							</div>
+						</div>
+						<div class="contact-info">
+							<div class="media-social">
+								<a href="https://web.facebook.com/seban3t/"><i class="fab fa-facebook-f"></i></a>
+								<a href="https://www.instagram.com/seban3t/"><i class="fab fa-instagram"></i></a>
+								<a href="https://twitter.com/Magnifi57562779"><i class="fab fa-twitter"></i></a>
+							</div>
+							<p>Phone. (+62)85835749690 Email : <span><a href="https://www.youtube.com/channel/UCfSo7ctuuT4JDXf7nP0IAWA?view_as=subscriber">yawncode@gmail.com</a></span> Alamat. Komp. Denai Pamulang Blok H. 06, Padang Sarai, Padang, Sumatera Barat</p>
+						</div>
+					</div>
 				</section>
+				<footer>
+					<div class="footer">
+						<a class="scroll" href="#home"><label class="logo foot"><span>P</span>ortofoli<span>O</span></label></a>
+						<p>Designed by <a href="https://twitter.com/Magnifi57562779">seban3tdeveloper</a></p>
+					</div>
+				</footer>
 				<script src="js/Design-Portfolio.js"></script>
 				<script src="js/jquery-3.3.1.min.js"></script>
 				<script src="js/jquery.easing.1.3.js"></script>
@@ -234,17 +301,7 @@
 <!-- hidden :focus effect -->
 <script>
 	$(document).ready(function(){
-		$('#nav').on({
-			mouseleave: function(){
-				$(":focus").blur();
-			}
-		});
-	});
-</script>
-<!-- hidden :focus effect on class .tombol -->
-<script>
-	$(document).ready(function(){
-		$('.slide-down').on({
+		$('body').on({
 			mouseleave: function(){
 				$(":focus").blur();
 			}
